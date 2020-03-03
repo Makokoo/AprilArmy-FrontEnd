@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import thumbnail from '../assets/images/thumbnail.svg';
+import thumbnail from '../assets/images/thumbnail.jpg';
+import loading from '../assets/images/loading.gif';
 
 class News extends Component{
 
@@ -20,7 +21,7 @@ class News extends Component{
         const {groups, isLoading} = this.state;
 
         if (isLoading) {
-            return <p>Loading...</p>;
+            return <p><img src={loading}></img></p>;
         }
 
         console.log("datos: " + groups);
