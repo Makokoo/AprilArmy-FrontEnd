@@ -24,8 +24,6 @@ class Videos extends Component{
             return <p><img src={loading} ></img></p>;
         }
 
-        console.log("datos: " + groups);
-
         return (
             
         <div className="album py-5 bg-light">
@@ -33,7 +31,9 @@ class Videos extends Component{
             <div className="divider-new">
                 <h3 className="h3-responsive text-black">Latest Videos</h3>
             </div>
-            <hr/>
+
+            <hr className="col-md-4"/>
+            
             <div className="container">
                 <div className="row">
 
